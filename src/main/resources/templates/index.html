@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0035)http://localhost:8080/easybbs/index -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>HuihuaBBS</title>
+
+<link href="./index_files/style.css" type="text/css" rel="stylesheet">
+<meta content="MSHTML 6.00.3790.4772" name="GENERATOR">
+</head>
+<body>
+	<div>
+		<!--下面是head-->
+		
+
+		<div>
+			<table cellspacing="0" cellpadding="0" width="98%" align="center">
+				<tbody>
+					<tr>
+						<td width="60%"><img style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" src="./index_files/logo1.png"></td>
+						<td width="40%"></td>
+						<td width="0%"></td>
+					</tr>
+				</tbody>
+			</table>
+			<!--上面是head-->
+			<!--下面是内容页-->
+			<table cellspacing="0" cellpadding="0" width="98%" align="center">
+				<tbody>
+					<tr>
+						<td colspan="2">
+							<div class="guide" id="Div1">
+								
+							» 您尚未登录 &nbsp;
+							<a href="http://localhost:8080/easybbs/register.jsp"><b>注册</b>
+									</a> |
+						忘记密码 | 社区服务 | 帮助
+						
+								
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<table class="t" cellspacing="0" cellpadding="0" width="98%" align="center">
+			<tbody>
+				<tr class="tr2">
+					<td width="100%" colspan="2"><marquee onmouseover="if(document.all!=null){this.stop()}" onmouseout="if(document.all!=null){this.start()}" scrollamount="2" scrolldelay="1"> EasyBBS即将推出，各位水友赶快鼓掌！
+							&nbsp; &nbsp; &nbsp; &nbsp;各位水友要经常光顾技术版块，不要总是灌水！ &nbsp; &nbsp;
+							&nbsp; &nbsp; 好好学习，天天向上！ &nbsp; &nbsp; &nbsp; &nbsp;
+							老婆，跟牛魔王出来看上帝！ &nbsp; &nbsp; &nbsp; &nbsp;招聘版主，请火速报名 &nbsp; &nbsp;
+							&nbsp; &nbsp; </marquee></td>
+				</tr>
+				<tr class="tr3">
+					<td width="40%">
+						<!--登陆框 -->
+
+
+
+						<form action="http://localhost:8080/easybbs/UserServlet?flag=login" method="post">
+							
+								<div>
+									<input class="input" style="WIDTH: 30%" name="username" type="text"> <input class="input" style="WIDTH: 30%" type="password" name="userpwd"> <input class="btn1" style="WIDTH: 20%" type="submit" value="登录">
+								</div>
+							
+						</form>
+
+					</td>
+					<!--论坛主题等简介-->
+					<td align="right" width="60%">
+						<table id="ctl00_ContentPlaceHolder1_loginControl1_DataList1" style="BORDER-COLLAPSE: collapse" cellspacing="0" border="0">
+							<tbody>
+								<tr>
+									<td>共 <span style="COLOR: #cc0000">10</span>
+										篇主题 | <span style="COLOR: #cc0000">12</span> 篇回帖 <img style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" src="./index_files/frame_on.gif"> <br> <span style="COLOR: #cc0000">8</span> 位会员
+
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</td>
+					<!--论坛主题等简介-->
+				</tr>
+			</tbody>
+		</table>
+		<!--登陆控件-->
+		<table class="t" cellspacing="0" cellpadding="0" width="98%" align="center">
+			<tbody>
+				<tr>
+					<th class="h" style="HEIGHT: 15px">精彩地带</th>
+				</tr>
+				<!--内容-->
+			</tbody>
+		</table>
+		<table id="ctl00_ContentPlaceHolder1_DataList1" style="BORDER-COLLAPSE: collapse" cellspacing="0" border="0">
+			<tbody>
+				<tr class="tr2" style="HEIGHT: 23px">
+					<td class="tac"></td>
+					<td class="tac">论坛</td>
+					<td class="tac">主题</td>
+					<td class="tac">帖数</td>
+					<td class="tac">最新发表主题简介</td>
+				</tr>
+
+<!-- todo: 循环输出类别 -->
+				
+
+					<tr th:each="kind:${kinds}" class="tr3 f_one">
+						<td class="icon tac" style="HEIGHT: 55px" width="1%"></td>
+						<th class="tals" style="WIDTH: 45%; HEIGHT: 55px">
+							<h2>
+								『 <a th:text="${kind.name}">ASP.NET技术乐园</a>
+								』
+							</h2> <br> <span class="smalltxt gray">&nbsp;<span th:text="${kind.description}" >WEB程序员的天堂</span>
+						</span>
+						</th>
+						<td class="tal y-style" style="WIDTH: 8%; HEIGHT: 55px"><span class="f10"><span>4</span> </span> <br></td>
+						<td class="tal y-style" style="WIDTH: 8%; HEIGHT: 55px"><span class="f10"><span>4</span> </span> <br></td>
+						<th style="WIDTH: 32%; HEIGHT: 55px">主题: <span id="ctl00_ContentPlaceHolder1_DataList1_ctl01_lblNewTitle">JSP是什么</span>
+							<br> <span class="f12">作者: <span class="f9 green"><span>Eve</span>
+							</span> <br>
+						</span>时间: <span class="f9 green"><span>2019-12-04 16:26:09.0</span>
+						</span>
+						</th>
+					</tr>
+
+
+			</tbody>
+		</table>
+
+		<table class="t" cellspacing="0" cellpadding="0" width="98%" align="center">
+			<tbody>
+				<tr>
+					<td><img style="BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BORDER-BOTTOM-WIDTH: 0px; BORDER-RIGHT-WIDTH: 0px" src="./index_files/bottom_r.gif"></td>
+				</tr>
+			</tbody>
+		</table>
+		<div id="bottom">
+			<center class="gray">
+				<small>Total 0.016484(s) query 5, Time now is:11-05 10:18,
+					Gzip enabled <br>Powered by <b>Huihua</b> <b style="COLOR: #ff9900">v1.0RC</b> Code © 2017-11 DarkP' Corporation
+				</small>
+			</center>
+		</div>
+
+
+
+	</div>
+
+</body></html>
